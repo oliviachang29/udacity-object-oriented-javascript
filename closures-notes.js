@@ -63,5 +63,12 @@ which is why if you run sagas[0] twice, it yields two deed variables.
 NOTICE: It does not yield two foil variables, because sagas[0] only contains the deed function,
 not the newSaga function.
 */
-newSaga();
+
+newSaga(); // This will create a new newSaga context.
+// Therefore, there will be a new foil variable.
+sagas[0](); // This does the same thing as the two sagas[0] calls above
+sagas[1](); // However, when we call this, a new execution context is created within the second newSaga context.
+// This will create a new deed variable.
+sagas[0](); // When this is run, it will appear inside the first newSaga context.
+// To conclude, there is no effect on calling sagas[0] one final time, whether or not sagas[1] has been called.
 
