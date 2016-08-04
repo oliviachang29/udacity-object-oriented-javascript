@@ -1,7 +1,7 @@
 /* 
 this-notes.js
 Olivia Chang
-July 27 2016
+August 2 2016
 Notes from Udacity's Object-Oriented Javascript course
 NOTICE: not run-able
 */
