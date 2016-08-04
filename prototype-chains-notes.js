@@ -46,5 +46,3 @@ log(rose.z) // This is different, because rose was created through ongoing looku
 // Note that when we call rose.toString(), the this keyword refers to rose,
 // even though toString was defined in the top-level object,
 // the toString function is called on rose, and thus rose is left of the dot.
-
-// 
